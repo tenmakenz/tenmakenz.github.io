@@ -1,5 +1,10 @@
 export type ProjectStatus = 'En cours' | 'Planifié' | 'Terminé';
 
+export type Screenshot = {
+  url: string;
+  caption?: string;
+};
+
 export type Project = {
   id: string;
   title: string;
@@ -12,6 +17,7 @@ export type Project = {
   github?: string;
   link?: string;
   featured?: boolean;
+  screenshots?: Screenshot[];
 };
 
 export const projects: Project[] = [

@@ -16,10 +16,12 @@ const statusConfig: Record<ProjectStatus, { label: string; class: string }> = {
 const badge = statusConfig[project.status];
 ---
 
-<article
+<a
+  href={`/projets/${project.id}`}
   class="group bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col h-full
          hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-500/5
-         transition-all duration-300"
+         transition-all duration-300 cursor-pointer"
+  aria-label={`Voir le projet ${project.title}`}
 >
   <!-- En-tête -->
   <div class="flex items-start justify-between gap-3 mb-3">
@@ -95,4 +97,4 @@ const badge = statusConfig[project.status];
       </a>
     )}
   </div>
-</article>
+</a>
