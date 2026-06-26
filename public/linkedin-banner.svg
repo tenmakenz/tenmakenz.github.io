@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" font-family="'Courier New', monospace">
   <defs>
-    <radialGradient id="glow" cx="75%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.07"/>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.06"/>
       <stop offset="100%" stop-color="#070b14" stop-opacity="0"/>
     </radialGradient>
     <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -11,64 +11,61 @@
 
   <!-- Fond -->
   <rect width="1584" height="396" fill="#070b14"/>
-
-  <!-- Motif de points -->
   <rect width="1584" height="396" fill="url(#dots)"/>
-
-  <!-- Glow cyan côté droit -->
   <rect width="1584" height="396" fill="url(#glow)"/>
 
   <!-- Ligne d'accent en bas -->
   <rect x="0" y="388" width="1584" height="2" fill="#22d3ee" opacity="0.4"/>
 
-  <!-- Ligne décorative verticale gauche -->
-  <rect x="80" y="60" width="1.5" height="276" fill="#22d3ee" opacity="0.3"/>
-
-  <!-- Bloc texte principal -->
-  <text x="120" y="148" fill="#e2e8f0" font-size="52" font-weight="bold" font-family="'Courier New', monospace" letter-spacing="-1">Raphaël Blessing</text>
-
-  <!-- Séparateur -->
-  <rect x="120" y="168" width="320" height="1.5" fill="#22d3ee" opacity="0.6"/>
-
-  <!-- Titre -->
-  <text x="120" y="208" fill="#94a3b8" font-size="24" letter-spacing="1">Administrateur systèmes &amp; réseaux</text>
-  <text x="120" y="240" fill="#22d3ee" font-size="20" letter-spacing="2">Cybersécurité · Systèmes · Réseaux</text>
-
-  <!-- Tags tech -->
-  <rect x="120" y="278" width="130" height="30" rx="6" fill="#0a1929" stroke="#1e3a5f" stroke-width="1"/>
-  <text x="185" y="298" text-anchor="middle" fill="#64748b" font-size="14">Proxmox · Linux</text>
-
-  <rect x="264" y="278" width="130" height="30" rx="6" fill="#0a1929" stroke="#1e3a5f" stroke-width="1"/>
-  <text x="329" y="298" text-anchor="middle" fill="#64748b" font-size="14">Wireshark · IDS</text>
-
-  <rect x="408" y="278" width="130" height="30" rx="6" fill="#0a1929" stroke="#1e3a5f" stroke-width="1"/>
-  <text x="473" y="298" text-anchor="middle" fill="#64748b" font-size="14">Python · Bash</text>
-
-  <rect x="552" y="278" width="160" height="30" rx="6" fill="#0a1929" stroke="#22d3ee" stroke-width="1" opacity="0.7"/>
-  <text x="632" y="298" text-anchor="middle" fill="#22d3ee" font-size="14">raphaelblessing.fr</text>
-
-  <!-- Élément décoratif droit — circuit simplifié -->
-  <g opacity="0.15" stroke="#22d3ee" stroke-width="1.5" fill="none">
-    <rect x="1100" y="80" width="60" height="60" rx="4"/>
-    <rect x="1220" y="140" width="60" height="60" rx="4"/>
-    <rect x="1340" y="80" width="60" height="60" rx="4"/>
-    <rect x="1160" y="240" width="60" height="60" rx="4"/>
-    <rect x="1300" y="200" width="60" height="60" rx="4"/>
-    <line x1="1160" y1="110" x2="1220" y2="110"/>
-    <line x1="1220" y1="110" x2="1220" y2="140"/>
-    <line x1="1280" y1="170" x2="1340" y2="170"/>
-    <line x1="1340" y1="170" x2="1340" y2="140"/>
-    <line x1="1160" y1="110" x2="1160" y2="80"/>
-    <line x1="1160" y1="80" x2="1340" y2="80"/>
-    <line x1="1190" y1="300" x2="1190" y2="260"/>
-    <line x1="1190" y1="260" x2="1300" y2="260"/>
-    <line x1="1300" y1="260" x2="1300" y2="260"/>
-    <circle cx="1160" cy="110" r="4" fill="#22d3ee"/>
-    <circle cx="1280" cy="170" r="4" fill="#22d3ee"/>
-    <circle cx="1190" cy="270" r="4" fill="#22d3ee"/>
-    <circle cx="1340" cy="110" r="4" fill="#22d3ee"/>
+  <!-- Éléments déco gauche (zone photo) — très discrets -->
+  <g opacity="0.06" stroke="#22d3ee" stroke-width="1" fill="none">
+    <rect x="30" y="60" width="200" height="270" rx="8"/>
+    <line x1="80" y1="60" x2="80" y2="330"/>
   </g>
 
-  <!-- Lyon · France discret -->
-  <text x="120" y="350" fill="#334155" font-size="14" letter-spacing="2">Lyon · France · CONSORT Group</text>
+  <!-- Éléments déco droite — circuit -->
+  <g opacity="0.12" stroke="#22d3ee" stroke-width="1.5" fill="none">
+    <rect x="1380" y="80" width="50" height="50" rx="4"/>
+    <rect x="1460" y="140" width="50" height="50" rx="4"/>
+    <rect x="1380" y="240" width="50" height="50" rx="4"/>
+    <rect x="1500" y="80" width="50" height="50" rx="4"/>
+    <line x1="1430" y1="105" x2="1460" y2="105"/>
+    <line x1="1460" y1="105" x2="1460" y2="140"/>
+    <line x1="1510" y1="105" x2="1510" y2="165"/>
+    <line x1="1510" y1="165" x2="1460" y2="165"/>
+    <line x1="1405" y1="240" x2="1405" y2="200"/>
+    <line x1="1405" y1="200" x2="1485" y2="200"/>
+    <line x1="1485" y1="200" x2="1485" y2="190"/>
+    <circle cx="1430" cy="105" r="3" fill="#22d3ee"/>
+    <circle cx="1510" cy="165" r="3" fill="#22d3ee"/>
+    <circle cx="1405" cy="200" r="3" fill="#22d3ee"/>
+  </g>
+
+  <!-- ===== BLOC TEXTE CENTRÉ (évite la zone photo ~0-280px) ===== -->
+
+  <!-- Nom -->
+  <text x="792" y="140" text-anchor="middle" fill="#e2e8f0" font-size="56" font-weight="bold" letter-spacing="-1">Raphaël Blessing</text>
+
+  <!-- Séparateur centré -->
+  <rect x="492" y="158" width="600" height="1.5" fill="#22d3ee" opacity="0.5"/>
+
+  <!-- Titre -->
+  <text x="792" y="200" text-anchor="middle" fill="#94a3b8" font-size="24" letter-spacing="1">Administrateur systèmes &amp; réseaux</text>
+  <text x="792" y="232" text-anchor="middle" fill="#22d3ee" font-size="20" letter-spacing="3">Cybersécurité · Systèmes · Réseaux</text>
+
+  <!-- Tags -->
+  <rect x="472" y="268" width="130" height="30" rx="6" fill="#0a1929" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="537" y="288" text-anchor="middle" fill="#64748b" font-size="14">Proxmox · Linux</text>
+
+  <rect x="616" y="268" width="130" height="30" rx="6" fill="#0a1929" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="681" y="288" text-anchor="middle" fill="#64748b" font-size="14">Wireshark · IDS</text>
+
+  <rect x="760" y="268" width="130" height="30" rx="6" fill="#0a1929" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="825" y="288" text-anchor="middle" fill="#64748b" font-size="14">Python · Bash</text>
+
+  <rect x="904" y="268" width="170" height="30" rx="6" fill="#0a1929" stroke="#22d3ee" stroke-width="1" opacity="0.8"/>
+  <text x="989" y="288" text-anchor="middle" fill="#22d3ee" font-size="14">raphaelblessing.fr</text>
+
+  <!-- Lyon discret -->
+  <text x="792" y="348" text-anchor="middle" fill="#1e293b" font-size="13" letter-spacing="3">Lyon · France · CONSORT Group</text>
 </svg>
