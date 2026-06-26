@@ -20,8 +20,8 @@ Après un BTS CIEL et un BUT Informatique parcours DACS obtenus en alternance,
 je poursuis mon parcours en cycle ingénieur Informatique au CESI (2026-2029),
 en continuant avec mon entreprise actuelle.
 
-Mon objectif : devenir ingénieur expert en cybersécurité et administration d'infrastructures,
-à la croisée de la sécurité, des systèmes et du réseau. Curieux et autonome,
+Mon objectif : devenir ingénieur expert en cybersécurité et administration d'infrastructures.
+Curieux et autonome,
 j'auto-héberge ma propre infrastructure et développe des projets logiciels personnels
 pour approfondir mes compétences au-delà du cadre académique et professionnel.`,
 } as const;
