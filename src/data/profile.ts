@@ -8,9 +8,9 @@ export const profile = {
   github: 'https://github.com/tenmakenz',
   // phone: 'TODO: ajouter si nécessaire',
 
-  // Remplacer par l'ID Formspree réel après inscription sur formspree.io
+  
   // Si vide, le formulaire de contact renvoie vers mailto:
-  formspreeId: 'FORMSPREE_FORM_ID',
+  formspreeId: 'xbdvoara',
 
   summary: `Alternant en informatique spécialisé en cybersécurité, systèmes et réseaux,
 je travaille actuellement en tant qu'Expert Sécurité & Systèmes chez CONSORT Group à Lyon,
