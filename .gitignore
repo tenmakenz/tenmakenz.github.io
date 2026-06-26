@@ -1,0 +1,25 @@
+# Dépendances
+node_modules/
+
+# Build Astro
+dist/
+.astro/
+
+# Environnement local
+.env
+.env.local
+.env.*.local
+
+# Éditeurs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
