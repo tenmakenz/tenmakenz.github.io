@@ -1,107 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" font-family="'JetBrains Mono', 'Courier New', monospace">
-  <rect width="900" height="540" fill="#0f172a" rx="12"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="'Courier New', monospace">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M1,1 L4,4 L1,7" stroke="#475569" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    </marker>
+  </defs>
+
+  <!-- Fond -->
+  <rect width="960" height="520" fill="#070b14" rx="12"/>
 
   <!-- Titre -->
-  <text x="450" y="40" text-anchor="middle" fill="#94a3b8" font-size="13" letter-spacing="2">ARCHITECTURE SYSTÈME</text>
-  <line x1="60" y1="52" x2="840" y2="52" stroke="#1e293b" stroke-width="1"/>
+  <text x="480" y="36" text-anchor="middle" fill="#22d3ee" font-size="11" letter-spacing="4" font-weight="bold">ARCHITECTURE SYSTÈME — LIFEHUB</text>
+  <line x1="48" y1="48" x2="912" y2="48" stroke="#1e293b" stroke-width="1"/>
 
-  <!-- ===== COUCHE CLIENT ===== -->
-  <text x="80" y="88" fill="#475569" font-size="10" letter-spacing="1">CLIENT</text>
-  <rect x="60" y="96" width="780" height="80" rx="8" fill="#0a0f1e" stroke="#1e293b" stroke-width="1"/>
+  <!-- ======== LAYER CLIENT ======== -->
+  <rect x="48" y="64" width="864" height="106" rx="8" fill="#0c1628" stroke="#1e293b" stroke-width="1"/>
+  <text x="62" y="82" fill="#334155" font-size="10" letter-spacing="2">CLIENT</text>
 
-  <!-- PWA -->
-  <rect x="80" y="110" width="140" height="52" rx="6" fill="#162033" stroke="#22d3ee" stroke-width="1"/>
-  <text x="150" y="132" text-anchor="middle" fill="#22d3ee" font-size="11" font-weight="bold">PWA</text>
-  <text x="150" y="148" text-anchor="middle" fill="#64748b" font-size="9">Next.js 14 · App Router</text>
-  <text x="150" y="160" text-anchor="middle" fill="#64748b" font-size="9">TypeScript · Tailwind</text>
+  <!-- PWA — boîte accent -->
+  <rect x="68" y="88" width="172" height="68" rx="6" fill="#0a1929" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="154" y="110" text-anchor="middle" fill="#22d3ee" font-size="13" font-weight="bold">PWA</text>
+  <text x="154" y="128" text-anchor="middle" fill="#64748b" font-size="11">Next.js 14 · App Router</text>
+  <text x="154" y="144" text-anchor="middle" fill="#64748b" font-size="11">TypeScript · Tailwind</text>
 
   <!-- Modules UI -->
-  <rect x="240" y="110" width="120" height="52" rx="6" fill="#162033" stroke="#1e293b" stroke-width="1"/>
-  <text x="300" y="134" text-anchor="middle" fill="#94a3b8" font-size="10">Dashboard</text>
-  <text x="300" y="150" text-anchor="middle" fill="#475569" font-size="9">Vue unifiée</text>
+  <rect x="256" y="88" width="148" height="68" rx="6" fill="#0c1628" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="330" y="116" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="bold">Dashboard</text>
+  <text x="330" y="135" text-anchor="middle" fill="#475569" font-size="11">Vue unifiée</text>
 
-  <rect x="374" y="110" width="120" height="52" rx="6" fill="#162033" stroke="#1e293b" stroke-width="1"/>
-  <text x="434" y="134" text-anchor="middle" fill="#94a3b8" font-size="10">Planificateur</text>
-  <text x="434" y="150" text-anchor="middle" fill="#475569" font-size="9">Time-blocking</text>
+  <rect x="416" y="88" width="148" height="68" rx="6" fill="#0c1628" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="490" y="116" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="bold">Planificateur</text>
+  <text x="490" y="135" text-anchor="middle" fill="#475569" font-size="11">Time-blocking</text>
 
-  <rect x="508" y="110" width="120" height="52" rx="6" fill="#162033" stroke="#1e293b" stroke-width="1"/>
-  <text x="568" y="134" text-anchor="middle" fill="#94a3b8" font-size="10">Habitudes</text>
-  <text x="568" y="150" text-anchor="middle" fill="#475569" font-size="9">Suivi flexible</text>
+  <rect x="576" y="88" width="148" height="68" rx="6" fill="#0c1628" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="650" y="116" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="bold">Habitudes</text>
+  <text x="650" y="135" text-anchor="middle" fill="#475569" font-size="11">Suivi flexible</text>
 
-  <rect x="642" y="110" width="120" height="52" rx="6" fill="#162033" stroke="#1e293b" stroke-width="1"/>
-  <text x="702" y="134" text-anchor="middle" fill="#94a3b8" font-size="10">Assistant IA</text>
-  <text x="702" y="150" text-anchor="middle" fill="#475569" font-size="9">Chat + suggestions</text>
+  <rect x="736" y="88" width="156" height="68" rx="6" fill="#0c1628" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="814" y="116" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="bold">Assistant IA</text>
+  <text x="814" y="135" text-anchor="middle" fill="#475569" font-size="11">Chat · Suggestions</text>
 
-  <!-- ===== FLÈCHES CLIENT → API ===== -->
-  <line x1="450" y1="176" x2="450" y2="206" stroke="#334155" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <polygon points="446,202 450,210 454,202" fill="#334155"/>
-  <text x="460" y="196" fill="#334155" font-size="9">HTTPS / REST</text>
+  <!-- Flèche CLIENT → API -->
+  <line x1="480" y1="170" x2="480" y2="196" stroke="#334155" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <rect x="404" y="174" width="88" height="18" rx="4" fill="#070b14"/>
+  <text x="448" y="186" text-anchor="middle" fill="#475569" font-size="10" letter-spacing="1">HTTPS · REST</text>
 
-  <!-- ===== COUCHE API ===== -->
-  <text x="80" y="228" fill="#475569" font-size="10" letter-spacing="1">API</text>
-  <rect x="60" y="236" width="780" height="80" rx="8" fill="#0a0f1e" stroke="#1e293b" stroke-width="1"/>
+  <!-- ======== LAYER API ======== -->
+  <rect x="48" y="200" width="864" height="106" rx="8" fill="#0c1628" stroke="#1e293b" stroke-width="1"/>
+  <text x="62" y="218" fill="#334155" font-size="10" letter-spacing="2">API</text>
 
-  <rect x="80" y="250" width="160" height="52" rx="6" fill="#162033" stroke="#22d3ee" stroke-width="1"/>
-  <text x="160" y="272" text-anchor="middle" fill="#22d3ee" font-size="11" font-weight="bold">Next.js API Routes</text>
-  <text x="160" y="288" text-anchor="middle" fill="#64748b" font-size="9">Route handlers · Middleware</text>
-  <text x="160" y="300" text-anchor="middle" fill="#64748b" font-size="9">Auth · Validation (Zod)</text>
+  <rect x="68" y="224" width="188" height="68" rx="6" fill="#0a1929" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="162" y="246" text-anchor="middle" fill="#22d3ee" font-size="12" font-weight="bold">Next.js API Routes</text>
+  <text x="162" y="264" text-anchor="middle" fill="#64748b" font-size="11">Middleware · Auth</text>
+  <text x="162" y="280" text-anchor="middle" fill="#64748b" font-size="11">Validation (Zod)</text>
 
-  <rect x="260" y="250" width="130" height="52" rx="6" fill="#162033" stroke="#1e293b" stroke-width="1"/>
-  <text x="325" y="272" text-anchor="middle" fill="#94a3b8" font-size="10">Tâches API</text>
-  <text x="325" y="288" text-anchor="middle" fill="#475569" font-size="9">CRUD · Priorité</text>
-  <text x="325" y="300" text-anchor="middle" fill="#475569" font-size="9">Échéances</text>
+  <rect x="272" y="224" width="148" height="68" rx="6" fill="#0c1628" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="346" y="250" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="bold">Tâches</text>
+  <text x="346" y="269" text-anchor="middle" fill="#475569" font-size="11">CRUD · Priorité</text>
 
-  <rect x="404" y="250" width="130" height="52" rx="6" fill="#162033" stroke="#1e293b" stroke-width="1"/>
-  <text x="469" y="272" text-anchor="middle" fill="#94a3b8" font-size="10">Planif. API</text>
-  <text x="469" y="288" text-anchor="middle" fill="#475569" font-size="9">Énergie · Blocs</text>
-  <text x="469" y="300" text-anchor="middle" fill="#475569" font-size="9">Conflits</text>
+  <rect x="432" y="224" width="148" height="68" rx="6" fill="#0c1628" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="506" y="250" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="bold">Planification</text>
+  <text x="506" y="269" text-anchor="middle" fill="#475569" font-size="11">Énergie · Blocs</text>
 
-  <rect x="548" y="250" width="130" height="52" rx="6" fill="#162033" stroke="#1e293b" stroke-width="1"/>
-  <text x="613" y="272" text-anchor="middle" fill="#94a3b8" font-size="10">LLM API</text>
-  <text x="613" y="288" text-anchor="middle" fill="#475569" font-size="9">Provider-agnostic</text>
-  <text x="613" y="300" text-anchor="middle" fill="#475569" font-size="9">Streaming</text>
+  <rect x="592" y="224" width="148" height="68" rx="6" fill="#0c1628" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="666" y="250" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="bold">LLM</text>
+  <text x="666" y="269" text-anchor="middle" fill="#475569" font-size="11">Provider-agnostic</text>
 
-  <rect x="692" y="250" width="130" height="52" rx="6" fill="#162033" stroke="#1e293b" stroke-width="1"/>
-  <text x="757" y="272" text-anchor="middle" fill="#94a3b8" font-size="10">Métriques API</text>
-  <text x="757" y="288" text-anchor="middle" fill="#475569" font-size="9">Santé · Habitudes</text>
-  <text x="757" y="300" text-anchor="middle" fill="#475569" font-size="9">Agrégats</text>
+  <rect x="752" y="224" width="148" height="68" rx="6" fill="#0c1628" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="826" y="250" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="bold">Métriques</text>
+  <text x="826" y="269" text-anchor="middle" fill="#475569" font-size="11">Santé · Habitudes</text>
 
-  <!-- ===== FLÈCHES API → DATA ===== -->
-  <line x1="300" y1="316" x2="300" y2="346" stroke="#334155" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <polygon points="296,342 300,350 304,342" fill="#334155"/>
-  <text x="260" y="338" fill="#334155" font-size="9">Prisma ORM</text>
+  <!-- Flèches API → DATA -->
+  <line x1="300" y1="306" x2="300" y2="334" stroke="#334155" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text x="308" y="324" fill="#475569" font-size="10">Prisma</text>
 
-  <line x1="613" y1="316" x2="613" y2="346" stroke="#334155" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <polygon points="609,342 613,350 617,342" fill="#334155"/>
-  <text x="620" y="338" fill="#334155" font-size="9">fetch / SDK</text>
+  <line x1="666" y1="306" x2="666" y2="334" stroke="#334155" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text x="674" y="324" fill="#475569" font-size="10">SDK</text>
 
-  <!-- ===== COUCHE DONNÉES ===== -->
-  <text x="80" y="368" fill="#475569" font-size="10" letter-spacing="1">DONNÉES</text>
-  <rect x="60" y="376" width="780" height="80" rx="8" fill="#0a0f1e" stroke="#1e293b" stroke-width="1"/>
+  <!-- ======== LAYER DONNÉES ======== -->
+  <rect x="48" y="338" width="864" height="88" rx="8" fill="#0c1628" stroke="#1e293b" stroke-width="1"/>
+  <text x="62" y="356" fill="#334155" font-size="10" letter-spacing="2">DONNÉES</text>
 
-  <!-- SQLite -->
-  <rect x="80" y="392" width="440" height="50" rx="6" fill="#162033" stroke="#22d3ee" stroke-width="1"/>
-  <text x="300" y="414" text-anchor="middle" fill="#22d3ee" font-size="11" font-weight="bold">SQLite + Prisma</text>
-  <text x="300" y="430" text-anchor="middle" fill="#64748b" font-size="9">Tasks · Habits · TimeBlocks · HealthMetrics · Users · Sessions</text>
+  <rect x="68" y="362" width="480" height="52" rx="6" fill="#0a1929" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="308" y="384" text-anchor="middle" fill="#22d3ee" font-size="13" font-weight="bold">SQLite + Prisma ORM</text>
+  <text x="308" y="403" text-anchor="middle" fill="#475569" font-size="11">Tasks · Habits · TimeBlocks · HealthMetrics · Sessions</text>
 
-  <!-- LLM Providers -->
-  <rect x="540" y="392" width="280" height="50" rx="6" fill="#162033" stroke="#7c3aed" stroke-width="1"/>
-  <text x="680" y="414" text-anchor="middle" fill="#a78bfa" font-size="11" font-weight="bold">LLM Providers</text>
-  <text x="680" y="430" text-anchor="middle" fill="#64748b" font-size="9">OpenAI · Anthropic · Ollama (local)</text>
+  <rect x="564" y="362" width="332" height="52" rx="6" fill="#0a0b1e" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="730" y="384" text-anchor="middle" fill="#a78bfa" font-size="13" font-weight="bold">LLM Providers</text>
+  <text x="730" y="403" text-anchor="middle" fill="#475569" font-size="11">OpenAI · Anthropic · Ollama (local)</text>
 
-  <!-- ===== COUCHE DÉPLOIEMENT ===== -->
-  <text x="80" y="475" fill="#475569" font-size="10" letter-spacing="1">DÉPLOIEMENT</text>
-  <rect x="60" y="483" width="780" height="44" rx="8" fill="#0a0f1e" stroke="#1e293b" stroke-width="1"/>
+  <!-- Flèche DATA → DEPLOY -->
+  <line x1="480" y1="426" x2="480" y2="446" stroke="#334155" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
 
-  <rect x="80" y="493" width="150" height="26" rx="5" fill="#162033" stroke="#f97316" stroke-width="1"/>
-  <text x="155" y="510" text-anchor="middle" fill="#fb923c" font-size="10" font-weight="bold">Docker Compose</text>
+  <!-- ======== LAYER DÉPLOIEMENT ======== -->
+  <rect x="48" y="450" width="864" height="58" rx="8" fill="#0c1628" stroke="#1e293b" stroke-width="1"/>
+  <text x="62" y="468" fill="#334155" font-size="10" letter-spacing="2">DÉPLOIEMENT</text>
 
-  <rect x="244" y="493" width="150" height="26" rx="5" fill="#162033" stroke="#1e293b" stroke-width="1"/>
-  <text x="319" y="510" text-anchor="middle" fill="#64748b" font-size="10">Caddy · TLS auto</text>
+  <rect x="68" y="472" width="190" height="28" rx="5" fill="#0a1929" stroke="#f97316" stroke-width="1.5"/>
+  <text x="163" y="491" text-anchor="middle" fill="#fb923c" font-size="12" font-weight="bold">Docker Compose</text>
 
-  <rect x="408" y="493" width="150" height="26" rx="5" fill="#162033" stroke="#1e293b" stroke-width="1"/>
-  <text x="483" y="510" text-anchor="middle" fill="#64748b" font-size="10">Self-hosted · Proxmox</text>
+  <rect x="272" y="472" width="190" height="28" rx="5" fill="#0c1628" stroke="#1e293b" stroke-width="1"/>
+  <text x="367" y="491" text-anchor="middle" fill="#64748b" font-size="12">Caddy · TLS auto</text>
 
-  <rect x="572" y="493" width="150" height="26" rx="5" fill="#162033" stroke="#1e293b" stroke-width="1"/>
-  <text x="647" y="510" text-anchor="middle" fill="#64748b" font-size="10">PWA installable</text>
+  <rect x="476" y="472" width="190" height="28" rx="5" fill="#0c1628" stroke="#1e293b" stroke-width="1"/>
+  <text x="571" y="491" text-anchor="middle" fill="#64748b" font-size="12">Proxmox · Self-hosted</text>
+
+  <rect x="680" y="472" width="220" height="28" rx="5" fill="#0c1628" stroke="#1e293b" stroke-width="1"/>
+  <text x="790" y="491" text-anchor="middle" fill="#64748b" font-size="12">PWA installable</text>
 </svg>

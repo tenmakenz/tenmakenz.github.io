@@ -38,11 +38,11 @@ L'ensemble est relié par un modèle d'objets unifié et une couche LLM provider
     screenshots: [
       {
         url: '/screenshots/lifehub/architecture.svg',
-        caption: 'Architecture système — stack Next.js 14, API Routes, Prisma/SQLite, couche LLM provider-agnostic, déploiement Docker/Caddy self-hosted.',
+        caption: 'Architecture système — 4 couches : Client (PWA), API Routes, Données (Prisma/SQLite), Déploiement (Docker/Caddy).',
       },
       {
         url: '/screenshots/lifehub/modules.svg',
-        caption: 'Modèle de données unifié — entités Task, Habit, TimeBlock, HealthMetric et AIContext reliées par un objet User central.',
+        caption: 'Modèle de données — 5 entités reliées à un User central : Task, Habit, TimeBlock, HealthMetric, AIContext.',
       },
     ],
   },
