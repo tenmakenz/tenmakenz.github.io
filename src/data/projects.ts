@@ -64,18 +64,39 @@ et d'apprentissage continu.`,
   },
   {
     id: 'ids-ips',
-    title: 'Détection d\'intrusion réseau (pare-feu + IPS)',
-    context: 'Projet académique — 13 h en autonomie',
-    shortDesc: 'Infrastructure réseau multi-VM simulant le réseau d\'une petite entreprise, avec pare-feu et IPS, et scripts de test pour valider la politique de filtrage.',
-    description: `Mise en place d'une infrastructure réseau virtualisée multi-VM reproduisant le réseau
-d'une petite entreprise. Déploiement d'un pare-feu couplé à un IPS (Intrusion Prevention System)
-pour contrôler et analyser le trafic. Développement de scripts de test automatisés pour valider
-la politique de filtrage et le comportement de l'IPS face à des scénarios d'intrusion simulés.
-Méthodologie : définition des règles, simulation d'attaques, analyse des logs, ajustement.`,
-    tech: ['pfSense', 'Suricata / Snort', 'Virtualisation (VM)', 'Python', 'Bash', 'Nmap'],
-    skills: ['Architecture réseau sécurisée', 'Filtrage & détection d\'intrusion', 'Automatisation de tests', 'Analyse de logs', 'Méthodologie sécurité'],
-    status: 'Planifié',
+    title: 'Infrastructure pare-feu + IPS (DMZ, NAT, Suricata)',
+    context: 'Projet académique BUT3 — en autonomie',
+    shortDesc: 'Déploiement d\'une infrastructure réseau virtualisée multi-zones (DMZ publique, DMZ privée, intranet) protégée par un pare-feu nftables stateful et l\'IPS Suricata couplé via NFQUEUE.',
+    description: `Architecture simulée sous Proxmox avec 5 VMs Debian interconnectées en 4 zones distinctes :
+Internet (5.5.5.5), DMZ publique (66.6.6.4/30 — DNS/HTTP), réseau interne (10.0.0.0/24) et DMZ privée
+(10.0.1.0/24 — SSH). Le pare-feu central gère 4 interfaces réseau en dual-stack IPv4/IPv6.
+
+Configuration nftables (netfilter) :
+Politique par défaut DROP sur toutes les chaînes. Filtrage stateful avec suivi de connexions (conntrack).
+NAT masquerade depuis le réseau interne vers la DMZ publique (eth1) et depuis la DMZ privée vers
+Internet (eth0). Protection anti-spoofing et rejet des paquets invalides. Règles par zone :
+Internet → pare-feu (ICMP echo-request, Time Exceeded), Internet → DMZ publique (HTTP, DNS UDP, ICMP),
+réseau interne → DMZ publique (DNS UDP + NAT), réseau interne → DMZ privée (SSH IPv6),
+DMZ privée → Internet (SSH + NAT), pare-feu → DMZ privée (SSH IPv6).
+
+IPS Suricata couplé à nftables via NFQUEUE :
+3 règles de détection/blocage actives — requêtes DNS vers malicious.com (drop immédiat),
+ping flood détecté au-delà de 10 paquets ICMP/s (validé avec hping3 --flood),
+brute-force SSH bloqué au-delà de 5 tentatives/s (validé avec hping3 -S -p 22 --faster).
+
+Tests de validation : matrice de flux inter-zones vérifiée avec ping, curl et ssh,
+scénarios d'intrusion rejoués avec nmap et hping3, logs analysés dans Suricata eve.json
+et compteurs nftables (nft list ruleset).`,
+    tech: ['Debian Linux', 'nftables / netfilter', 'Suricata (IPS)', 'Proxmox VE', 'IPv4 / IPv6', 'NAT', 'NFQUEUE', 'hping3', 'Nmap'],
+    skills: ['Architecture réseau multi-zones', 'Filtrage stateful & NAT', 'Prévention d\'intrusion (IPS)', 'Écriture de règles de détection', 'Tests d\'intrusion contrôlés', 'Analyse de logs réseau'],
+    status: 'Terminé',
     featured: true,
+    screenshots: [
+      {
+        url: '/screenshots/ids-ips/architecture-reseau.svg',
+        caption: 'Architecture réseau — 4 zones (Internet, DMZ publique, Intranet, DMZ privée) avec pare-feu nftables et IPS Suricata.',
+      },
+    ],
   },
   {
     id: 'grille-eval',
