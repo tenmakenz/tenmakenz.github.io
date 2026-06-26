@@ -35,6 +35,16 @@ L'ensemble est relié par un modèle d'objets unifié et une couche LLM provider
     skills: ['Architecture full-stack', 'Modélisation de données', 'Conteneurisation & déploiement', 'UX orientée besoin réel', 'Intégration LLM'],
     status: 'En cours',
     featured: true,
+    screenshots: [
+      {
+        url: '/screenshots/lifehub/architecture.svg',
+        caption: 'Architecture système — stack Next.js 14, API Routes, Prisma/SQLite, couche LLM provider-agnostic, déploiement Docker/Caddy self-hosted.',
+      },
+      {
+        url: '/screenshots/lifehub/modules.svg',
+        caption: 'Modèle de données unifié — entités Task, Habit, TimeBlock, HealthMetric et AIContext reliées par un objet User central.',
+      },
+    ],
   },
   {
     id: 'homelab',
